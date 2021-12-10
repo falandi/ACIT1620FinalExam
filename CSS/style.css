@@ -29,6 +29,17 @@
   --formInput:      var(--white);
 }
 
+
+.dark-mode {
+  --navBg:          var(--black);
+  --navLinkHoverBg: var(--white);
+  --mainBg:         var(--blueGray);
+  --fontColor:      var(--black);
+  --navLinkColor:   var(--romanSilver);
+  --formBG:         var(--romanSilver);
+  --formInput:      var(--white);
+
+}
 /* toggle styles begin */
 .toggle {
   appearance: none;
@@ -186,4 +197,23 @@ input[type=text]:focus {
 .contact button {
  background: var(--darkGreen);
  color: var(--white);
+}
+
+
+/*MOBILE FRIENDLY CSS SECTION */
+@media only screen and (max-width: 600px){
+
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--navHeight);
+    padding: 0 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column
+  }
 }
